@@ -1,0 +1,1 @@
+fun main() = print(readln().run { filter { f -> count { it == f } == 1 }.length })
