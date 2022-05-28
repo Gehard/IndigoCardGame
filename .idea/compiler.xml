@@ -46,6 +46,15 @@
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Why_do_we_need_inner_classes.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Your_vehicle.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Blocks_in_a_box.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Board_game_basics__Game.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Cell.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Keyword.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Library.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Manager.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Properties.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Singleton_defined.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Object_declarations-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Compression_algorithm.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Convert_a_date.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Create_an_euphonious_word.main" target="11" />
