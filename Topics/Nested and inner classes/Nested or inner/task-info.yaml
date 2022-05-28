@@ -4,8 +4,6 @@ options:
 - text: These terms are synonymous
 - text: Nested classes include inner classes
 - text: Inner classes include nested classes
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
 files:
 - name: src/Main.kt
   visible: true

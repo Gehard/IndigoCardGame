@@ -10,8 +10,6 @@ options:
 - text: Initializer
 - text: Preparator
 - text: Setter
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
 files:
 - name: src/Main.kt
   visible: true

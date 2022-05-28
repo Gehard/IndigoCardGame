@@ -1,11 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
+- text: To determine the minimum number of characters in a substrings
 - text: To determine the minimum number of substrings
 - text: To specify the number of substrings
-- text: To determine the minimum number of characters in a substrings
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
 files:
 - name: src/Main.kt
   visible: true

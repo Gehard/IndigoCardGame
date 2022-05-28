@@ -1,13 +1,11 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: teach
-- text: .ea..
-- text: learning
-- text: '.....'
 - text: learn
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
+- text: .ea..
+- text: '.....'
+- text: learning
+- text: teach
 files:
 - name: src/Main.kt
   visible: true

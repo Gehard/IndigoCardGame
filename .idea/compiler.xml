@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-classes-kotlin.main" target="11" />
+      <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-reports-tests.main" target="11" />
+      <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-test-results.main" target="11" />
+      <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-tmp.main" target="11" />
+      <module name="Indigo_Card_Game.Indigo_Card_Game-task.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Bank_account.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Class_members_to_initialize_objects.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Correct_declaration.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Find_the_error.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-How_many_primary_constructors.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Implicit_constructor.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Init_usage.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Pets.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Point2D.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Reddit.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Constructors-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Edit_it.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Fill_in_the_type.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Fix_the_program.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Statements.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-The_form_of_declaration_without_type_inference.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Type_mismatch.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Beyond_the_word.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-First_digit.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Getting_letters_from_the_Alphabet.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Jumping_out.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Placement_of_ships.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Unique_characters.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Application_as_a_class.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Car.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Keyword_to_declare_a_member_function.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Patient_needs_a_doctor.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Member_functions-Volume_of_a_cube.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Busy_internship.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Christmas_tree.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Heroes_and_villains.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Nested_or_inner.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-New_Inner_class.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Why_do_we_need_inner_classes.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Your_vehicle.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Compression_algorithm.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Convert_a_date.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Create_an_euphonious_word.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Cutting_out_the_middle_of_a_string.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Determine_the_output.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Determine_the_value.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Determine_the_value__1_.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Double_characters.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Find_the_first_occurrence_of_the_word__the.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Generating_passwords.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Lucky_number.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Move_the_first_N_characters.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Number_of_occurrences.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Palindrome.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Parse_url.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Piece_of_alphabet.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-The_longest_word.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-The_lucky_ticket.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-The_percentage_of_G_and_C_characters.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Processing_strings-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Backslash_problem.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Creating_regexes.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Different_colo_u_rs.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Escapism.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Help_the_teacher.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Matching_pattern.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Rings_of_Power.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Aaaaaaa_to_a.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Find_the_difference.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Limit.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Removing_chords.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Splitting_with_spaces.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Regexps_in_use-Web_colors.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-Amount_on_the_account.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-First,_second,_third.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-From_0_to_9.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-Print_code.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-Tic-Tac-Toe.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-We_need_to_learn_Kotlin.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_code_print.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_program_print.main" target="11" />
+      <module name="Indigo_Card_Game.util.main" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

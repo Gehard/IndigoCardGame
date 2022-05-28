@@ -1,12 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
+- text: find() returns a Boolean result
 - text: Both functions return all matching substrings
 - text: find() returns only the first match
 - text: findAll() returns all suitable substrings
-- text: find() returns a Boolean result
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
 files:
 - name: src/Main.kt
   visible: true

@@ -5,8 +5,6 @@ options:
 - text: Room
 - text: Country
 - text: 'None: all are correct'
-message_correct: Congratulations!
-message_incorrect: Incorrect solution
 files:
 - name: src/Main.kt
   visible: true
