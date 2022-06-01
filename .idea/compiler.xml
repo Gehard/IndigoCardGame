@@ -38,6 +38,14 @@
       <module name="Indigo_Card_Game.Topics-Member_functions-Patient_needs_a_doctor.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Member_functions-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Member_functions-Volume_of_a_cube.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Application.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Application__1_.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Comprehension.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Comprehension__1_.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Comprehension__2_.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Help_the_robot.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Removing.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Map-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Busy_internship.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Christmas_tree.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Heroes_and_villains.main" target="11" />
