@@ -7,6 +7,10 @@
       <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-test-results.main" target="11" />
       <module name="Indigo_Card_Game.Indigo_Card_Game-task-build-tmp.main" target="11" />
       <module name="Indigo_Card_Game.Indigo_Card_Game-task.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Companion_object-A_good_companion.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Companion_object-Fix_an_error.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Companion_object-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Companion_object-Usage.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Constructors-Bank_account.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Constructors-Class_members_to_initialize_objects.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Constructors-Correct_declaration.main" target="11" />

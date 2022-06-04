@@ -10,3 +10,4 @@ content:
 - Processing strings
 - Object declarations
 - Mutable Map
+- Companion object
