@@ -112,6 +112,14 @@
       <module name="Indigo_Card_Game.Topics-Standard_output-We_need_to_learn_Kotlin.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_code_print.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_program_print.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Cutting_the_fraction.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Existing_functions.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Simple_converter.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Sum_of_Longs.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-The_superior_forces_of_the_Empire.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Where_is_the_type_overflow_possible.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Type_conversion-Where_is_the_type_overflow_possible__1_.main" target="11" />
       <module name="Indigo_Card_Game.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>
