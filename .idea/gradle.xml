@@ -40,6 +40,11 @@
             <option value="$PROJECT_DIR$/Topics/Data types/The form of declaration without type inference" />
             <option value="$PROJECT_DIR$/Topics/Data types/Theory" />
             <option value="$PROJECT_DIR$/Topics/Data types/Type mismatch" />
+            <option value="$PROJECT_DIR$/Topics/Enum/Currencies" />
+            <option value="$PROJECT_DIR$/Topics/Enum/Currency comparison" />
+            <option value="$PROJECT_DIR$/Topics/Enum/Methods and parameters of Enum" />
+            <option value="$PROJECT_DIR$/Topics/Enum/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Enum/valueOf() method" />
             <option value="$PROJECT_DIR$/Topics/Jumps and returns/Beyond the word" />
             <option value="$PROJECT_DIR$/Topics/Jumps and returns/First digit" />
             <option value="$PROJECT_DIR$/Topics/Jumps and returns/Getting letters from the Alphabet" />
@@ -98,6 +103,14 @@
             <option value="$PROJECT_DIR$/Topics/Processing strings/The lucky ticket" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/The percentage of G and C characters" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/A simple regex" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/Matching digits" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/OK Computer" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/The meaning of the {n} quantifier" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/The name of a variable" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/The plus quantitifier" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Quantifiers/UUIDs" />
             <option value="$PROJECT_DIR$/Topics/Regexps in use/Aaaaaaa to a" />
             <option value="$PROJECT_DIR$/Topics/Regexps in use/Find the difference" />
             <option value="$PROJECT_DIR$/Topics/Regexps in use/Limit" />

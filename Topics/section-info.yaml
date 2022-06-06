@@ -12,3 +12,5 @@ content:
 - Mutable Map
 - Companion object
 - Type conversion
+- Enum
+- Quantifiers
