@@ -26,9 +26,12 @@
       <module name="Indigo_Card_Game.Topics-Data_types-Edit_it.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Fill_in_the_type.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Fix_the_program.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Right_type.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Statements.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-The_form_of_declaration_without_type_inference.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Think_as_a_compiler.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_types-Think_as_compiler.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Type_mismatch.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Currencies.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Currency_comparison.main" target="11" />

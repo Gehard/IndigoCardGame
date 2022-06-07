@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: We can remove the colon (:) and the blank line and let Kotlin figure out the
+    type.
+- text: Char
+- text: var
+- text: string
+- text: String
+- text: Int
+files:
+- name: src/Main.kt
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    fun main(args: Array<String>) {
+      // put your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16074#comment
+status: Solved
+record: -1
