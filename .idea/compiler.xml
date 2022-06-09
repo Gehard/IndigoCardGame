@@ -76,6 +76,14 @@
       <module name="Indigo_Card_Game.Topics-Object_declarations-Properties.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Object_declarations-Singleton_defined.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Object_declarations-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-Find_a_keyword.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-I_like_Kotlin.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-Multiple_statements.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-Name_of_an_entry_point.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-The_eternal_truth.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-The_Hello_World_program.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Overview_of_the_basic_program-Your_name.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Compression_algorithm.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Convert_a_date.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Create_an_euphonious_word.main" target="11" />
