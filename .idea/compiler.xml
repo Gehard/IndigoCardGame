@@ -35,7 +35,9 @@
       <module name="Indigo_Card_Game.Topics-Data_types-Type_mismatch.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Currencies.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Currency_comparison.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Enum-Danger_level.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Methods_and_parameters_of_Enum.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Enum-Properties_of_Enum.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-valueOf___method.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Beyond_the_word.main" target="11" />
