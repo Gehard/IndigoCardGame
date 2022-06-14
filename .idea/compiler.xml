@@ -114,6 +114,14 @@
       <module name="Indigo_Card_Game.Topics-Quantifiers-The_plus_quantitifier.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Quantifiers-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Quantifiers-UUIDs.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Between_two_numbers.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Check_the_value.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-How_to_create_a_range.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Job.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Not_in_range.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Within_a_range.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Ranges-Within_both_ranges.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Regexps-Backslash_problem.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Regexps-Creating_regexes.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Regexps-Different_colo_u_rs.main" target="11" />
