@@ -41,6 +41,10 @@
       <module name="Indigo_Card_Game.Topics-Enum-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-valueOf___method.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Inheritance-Cart.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Inheritance-Create_a_child_class.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Inheritance-House_inheritance.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Inheritance-Keyword.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Inheritance-Requirement.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Inheritance-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Jumps_and_returns-Beyond_the_word.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Jumps_and_returns-First_digit.main" target="11" />
