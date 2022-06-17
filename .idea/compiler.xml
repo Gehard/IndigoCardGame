@@ -168,8 +168,11 @@
       <module name="Indigo_Card_Game.Topics-Standard_output-We_need_to_learn_Kotlin.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_code_print.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_program_print.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-toString__-Inheritance.main" target="11" />
       <module name="Indigo_Card_Game.Topics-toString__-Latte.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-toString__-Mochaccino.main" target="11" />
       <module name="Indigo_Card_Game.Topics-toString__-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-toString__-User_Information.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Type_conversion-Cutting_the_fraction.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Type_conversion-Existing_functions.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Type_conversion-Simple_converter.main" target="11" />

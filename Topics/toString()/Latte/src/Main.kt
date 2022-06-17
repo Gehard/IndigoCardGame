@@ -1,5 +1,3 @@
-class Latte(val milk: String, cost: Int, volume: Int): Coffee (cost, volume) {
-    override fun toString(): String {
-        return ("${super.toString()}; milk=$milk")
-    }
+class Latte(val milk: String, cost: Int, volume: Int) : Coffee(cost, volume) {
+    override fun toString() = "${super.toString()}; milk=$milk"
 }
