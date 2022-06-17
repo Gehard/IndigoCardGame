@@ -186,6 +186,8 @@
             <option value="$PROJECT_DIR$/Topics/Type conversion/Theory" />
             <option value="$PROJECT_DIR$/Topics/Type conversion/Where is the type overflow possible" />
             <option value="$PROJECT_DIR$/Topics/Type conversion/Where is the type overflow possible (1)" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Latte" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Theory" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

@@ -3,6 +3,7 @@ fun main() {
     val price = readLine()!!.toInt()
     val house = House.build(rooms, price)
     println(house.totalPrice)
+
 }
 
 abstract class House protected constructor(private val rooms: Int, price: Int) {

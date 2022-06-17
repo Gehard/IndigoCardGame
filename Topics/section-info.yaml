@@ -19,3 +19,4 @@ content:
 - Repeating blocks
 - Ranges
 - Inheritance
+- toString()
