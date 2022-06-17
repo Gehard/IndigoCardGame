@@ -1,17 +1,19 @@
 data class CustomerInfo(
-        val uid: String,
-        val operationSystem: String,
-        val ram: Int,
-        val coreSpeed: Double,
-        val timeStamp: Long
+    /** Unique user id */
+    val uid: String,
+    /** Operation system: Windows, Linux, macOS, iOS */
+    val operationSystem: String,
+    /** In GB */
+    val ram: Int,
+    /** In GHz */
+    val coreSpeed: Double,
+    val timeStamp: Long
 ) {
-        override fun toString(): String {
-                val longString1 = "Id: $uid; Operation System: $operationSystem; "
-                val longString2 = "RAM: $ram; Core Speed: $coreSpeed; Timestamp: $timeStamp"
-                return longString1 + longString2
-        }
+
+    override fun toString() = "Id: $uid; Operation System: $operationSystem; RAM: $ram; Core Speed: $coreSpeed; " +
+        "Timestamp: $timeStamp"
 }
 
 fun sendCustomerInfoToServer(customer: CustomerInfo) {
-        Server.send(customer.toString())
+    Server.send(customer.toString())
 }
