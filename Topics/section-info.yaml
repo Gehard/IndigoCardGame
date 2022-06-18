@@ -20,3 +20,4 @@ content:
 - Ranges
 - Inheritance
 - toString()
+- Data class
