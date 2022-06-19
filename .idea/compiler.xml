@@ -25,6 +25,7 @@
       <module name="Indigo_Card_Game.Topics-Constructors-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_class-equals___check.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_class-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_class-toString___modification.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Edit_it.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Fill_in_the_type.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_types-Fix_the_program.main" target="11" />
