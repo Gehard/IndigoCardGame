@@ -3,3 +3,4 @@ content:
 - equals() check
 - Client age
 - toString() modification
+- copy() usage

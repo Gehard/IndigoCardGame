@@ -23,6 +23,7 @@
       <module name="Indigo_Card_Game.Topics-Constructors-Point2D.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Constructors-Reddit.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Constructors-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Data_class-copy___usage.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_class-equals___check.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_class-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Data_class-toString___modification.main" target="11" />
