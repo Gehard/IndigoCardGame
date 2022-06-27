@@ -127,6 +127,12 @@
             <option value="$PROJECT_DIR$/Topics/Processing strings/The lucky ticket" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/The percentage of G and C characters" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/City population" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/Correct overriding" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/Field access" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/Mutable state" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/Property syntax" />
+            <option value="$PROJECT_DIR$/Topics/Properties accessors/Theory" />
             <option value="$PROJECT_DIR$/Topics/Quantifiers/A simple regex" />
             <option value="$PROJECT_DIR$/Topics/Quantifiers/Matching digits" />
             <option value="$PROJECT_DIR$/Topics/Quantifiers/OK Computer" />

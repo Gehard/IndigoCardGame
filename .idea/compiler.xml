@@ -117,6 +117,12 @@
       <module name="Indigo_Card_Game.Topics-Processing_strings-The_lucky_ticket.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-The_percentage_of_G_and_C_characters.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Processing_strings-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-City_population.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-Correct_overriding.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-Field_access.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-Mutable_state.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-Property_syntax.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Properties_accessors-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Quantifiers-A_simple_regex.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Quantifiers-Matching_digits.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Quantifiers-OK_Computer.main" target="11" />
