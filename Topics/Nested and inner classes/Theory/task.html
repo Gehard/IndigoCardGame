@@ -48,7 +48,7 @@ val hammer = Superhero.Hammer()</code></pre>
     }
 }</code></pre> 
   <p>Let's create a cat named Bob with a red bow:</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     val cat: Cat = Cat("Bob")
     val bow: Cat.Bow = cat.Bow("red")
 
@@ -87,7 +87,7 @@ val hammer = Superhero.Hammer()</code></pre>
 }</code></pre> 
   <p>You can see that inside the <code class="language-kotlin">Bow</code> class, we have access to all members of the class <code class="language-kotlin">Cat</code>: the <code class="language-kotlin">name</code> property and the <code class="language-kotlin">sayMeow</code> function.</p> 
   <p>How about creating a cat named Princess with a golden bow to prove that our code works?</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     val cat: Cat = Cat("Princess")
     val bow: Cat.Bow = cat.Bow("golden")
 
@@ -120,7 +120,7 @@ val inner = outer.Inner()</code></pre>
    <li>A class declared inside another class is called nested.</li> 
    <li>An inner class is a special case of a nested class that can access the members of its outer class.</li> 
    <li>Inner classes carry a reference to an object of an outer class, so to use inner classes, we must instantiate an outer class first.</li> 
-   <li>The main idea of inner classes is to hide some code from other classes and increase encapsulation.</li> 
+   <li>The indigo.main idea of inner classes is to hide some code from other classes and increase encapsulation.</li>
   </ul>
  </body>
 </html>

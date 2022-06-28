@@ -17,8 +17,8 @@
 }</code></pre> 
   <p>And then extend it:</p> 
   <pre><code class="language-kotlin">class Comics(pages: Int, author: String, cost: Float) : Book(pages, author, cost)</code></pre> 
-  <p>As you can see, we've created a new <code class="language-kotlin">Comics</code> class (child class) as an extension of our <code class="language-kotlin">Book</code> class. We haven't added any additional logic here yet, we've just passed all of its parameters right into the <code class="language-kotlin">Book</code> main constructor. Let's try it on a real example:</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <p>As you can see, we've created a new <code class="language-kotlin">Comics</code> class (child class) as an extension of our <code class="language-kotlin">Book</code> class. We haven't added any additional logic here yet, we've just passed all of its parameters right into the <code class="language-kotlin">Book</code> indigo.main constructor. Let's try it on a real example:</p>
+  <pre><code class="language-kotlin">fun indigo.main() {
     val spidermanBook = Comics(60, "The Universe", 8.99F)
     print(spidermanBook.getFullInfo())
 }
@@ -36,7 +36,7 @@
     }
 }</code></pre> 
   <p>And use them:</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     val centralBooklet = Booklet(5, 0.14F)
     print(centralBooklet.getUSDCost())
 }
@@ -51,7 +51,7 @@
     return book.pages &gt;= 100
 }</code></pre> 
   <p>Note that you can use this function for both parent and child classes:</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     val spidermanBook = Comics(113, "The Universe", 8.99F)
     val centralBooklet = Booklet(5, 0.14F)
     println(isBigBook(spidermanBook))

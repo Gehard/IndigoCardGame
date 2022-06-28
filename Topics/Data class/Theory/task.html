@@ -49,7 +49,7 @@
   <p>3. The primary constructor of a data class must have at least one parameter and all of those parameters must be <code class="language-kotlin">val</code> or <code class="language-kotlin">var</code>.</p> 
   <h5 id="copy" style="text-align: center;">Copy</h5> 
   <p>To be honest, there isn't really a convenient way to copy an object in Java, but Kotlin is different. For example, what if we have an instance of our <code class="language-kotlin">Client</code> class and we want the exact same client, just with a different name? Easy!</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     val bob = Client("Bob", 29, "Male")
     val john = bob.copy(name = "John")
     println(bob)

@@ -1,11 +1,8 @@
-class City(val name: String) {
-    var population: Int = 0
-
-    set(value) {
-        field = if (value < 0) {
-            0
-        } else if (value > 50_000_000) {
-            50_000_000
-        } else value
-    }
+const val LOWER_BORDER = 0
+const val UPPER_BORDER = 50_000_000
+data class City(val name: String) {
+    var population: Int = LOWER_BORDER
+        set(value) {
+            field = value.coerceIn(LOWER_BORDER, UPPER_BORDER)
+        }
 }

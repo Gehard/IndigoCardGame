@@ -1,135 +1,204 @@
 package indigo
 
-import java.util.*
-import kotlin.random.Random.Default.nextInt
+fun main() {
+    val deck = Deck()
+    val table = deck.getHand(Hand.TABLE_SIZE)
+    val player = Player(deck.getHand(Hand.DEAL_SIZE), "indigo.Player")
+    val computer = Player(deck.getHand(Hand.DEAL_SIZE))
+    var isPlayerTurn: Boolean
+    val playerWentFirst: Boolean
+    var exit = false
 
-enum class CardRank(val sign: String, val score: Int) {
-    ACE("A", 1),
-    TWO("2", 0),
-    THREE("3", 0),
-    FOUR("4", 0),
-    FIVE("5", 0),
-    SIX("6", 0),
-    SEVEN("7", 0),
-    EIGHT("8", 0),
-    NINE("9", 0),
-    TEN("10", 1),
-    JACK("J", 1),
-    QUEEN("Q", 1),
-    KING("K", 1);
-    companion object {
-        override fun toString(): String = values().joinToString(" ") { it.sign }
+    println("Indigo Card Game")
+    isPlayerTurn = getPlayerTurn().also { playerWentFirst = it }
+    println("Initial cards on the table: " + table.cards())
+
+    while (!exit) {
+        printCardsOnTable(table)
+        if (isEmpty(player.hand, computer.hand, deck)) break
+        if (isPlayerTurn) exit = playerTurn(player, computer, table) else computerTurn(computer, player, table)
+        isPlayerTurn = !isPlayerTurn
+    }
+    if (!exit) player.finalScore(playerWentFirst, computer, table)
+    println("Game Over")
+}
+
+private fun getPlayerTurn(): Boolean {
+    while (true) {
+        when (getString("Play first?")) {
+            "yes" -> return true
+            "no" -> return false
+        }
     }
 }
 
-enum class CardSuit(val sign: Char){
-    DIAMONDS('♦'),
-    HEARTS('♥'),
-    SPADES('♠'),
-    CLUBS('♣');
-    companion object {
-        override fun toString(): String = values().joinToString(" ") { it.sign.toString() }
+private fun printCardsOnTable(table: Hand) {
+    when {
+        table.isEmpty() -> println("\nNo cards on the table")
+        else -> println("\n" + table.size() + " cards on the table, and the top card is " + table.topCard())
     }
+}
+
+private fun isEmpty(player: Hand, computer: Hand, deck: Deck): Boolean {
+    if (deck.isEmpty() && player.isEmpty() && computer.isEmpty()) return true
+    if (player.isEmpty() && computer.isEmpty()) {
+        player.add(deck.getCards(Hand.DEAL_SIZE))
+        computer.add(deck.getCards(Hand.DEAL_SIZE))
+    }
+    return false
+}
+
+private fun playerTurn(player: Player, computer: Player, table: Hand): Boolean {
+    println("Cards in hand: " + player.hand.cardsNumbered())
+
+    while (true) {
+        val action = getString("Choose a card to play (1-${player.hand.size()}):")
+        if (action == "exit") return true
+        val card = player.hand.take(action.toIntOrNull() ?: continue) ?: continue
+        if (isWin(player, card, table)) player.printScore(computer)
+        return false
+    }
+}
+
+private fun computerTurn(computer: Player, player: Player, table: Hand) {
+    val card: String by lazy { computer.hand.bestMove(table.topCard()) }
+
+    println(computer.hand.cards())
+    println("Computer plays $card")
+    if (isWin(computer, card, table)) player.printScore(computer)
+}
+
+private fun isWin(player: Player, card: String, table: Hand): Boolean {
+    return table.isWin(card).also { isWin ->
+        table.add(card)
+        if (isWin) player.win(table)
+    }
+}
+
+private fun getString(message: String): String {
+    println(message)
+    return readln()
 }
 
 class Deck {
-    private val cards: MutableList<Card> = mutableListOf()
-    val mainStack: Stack<Card> = Stack<Card>()
-    constructor() {
-        generateCards()
-    }
-    private fun generateCards() {
-        for (suit in CardSuit.values()) {
-            for (rank in CardRank.values()){
-                cards.add(Card(rank,suit))
-            }
-        }
-        shuffle()
-    }
-    fun reset() {
-        cards.clear()
-        mainStack.clear()
-        generateCards()
-    }
-    fun collectRemainingCard() {
-        mainStack.forEach { cards.add(it) }
-        mainStack.clear()
-    }
-    fun shuffle() {
-        val length = cards.size
-        for (i in 0 until length) {
-            val n: Int = nextInt(cards.size)
-            val randomCard = cards[n]
-            mainStack.push(randomCard)
-            cards.remove(randomCard)
-        }
-    }
-    fun getCards(n: Int): MutableList<Card> {
-        val temp: MutableList<Card> = mutableListOf()
-        for (i in 0 until n) {
-            temp.add(mainStack.pop())
-        }
-        return temp
+    private val deck = ArrayDeque<String>()
+
+    init {
+        val ranks = "A 2 3 4 5 6 7 8 9 10 J Q K".split(" ")
+        val suits = "♦ ♥ ♠ ♣".split(" ")
+
+        suits.flatMap { suit -> ranks.map { rank -> rank + suit } }.shuffled().toCollection(deck)
     }
 
-    override fun toString(): String = cards.joinToString(" ") { it.toString() }
+    fun getHand(num: Int) = Hand.create(getCards(num))
+
+    fun getCards(num: Int) = if (deck.size >= num) (1..num).map { deck.removeLast() } else emptyList()
+
+    fun isEmpty() = deck.isEmpty()
 }
 
-class Card(val rank: CardRank, val suit: CardSuit){
-    override fun toString(): String = this.rank.sign + this.suit.sign
-}
+class Hand {
+    private val hand = ArrayDeque<String>()
 
-fun resetCommand(deck: Deck) {
-    deck.reset()
-    println("Card deck is reset.")
-}
+    fun add(cards: List<String>) = cards.toCollection(hand)
 
-fun shuffleCommand(deck: Deck) {
-    deck.collectRemainingCard()
-    deck.shuffle()
-    println("Card deck is shuffled.")
-}
-fun getCommand(deck: Deck) {
-    println("Number of cards:")
-    val input = readLine()!!
-    try {
-        val n = input.toInt()
-        if (n in 1..52) {
-            println(deck.getCards(n).joinToString(" "))
+    fun add(card: String) = hand.add(card)
+
+    fun take(card: Int) = if (card in 1..hand.size) hand.removeAt(card - 1) else null
+
+    fun reset() = hand.clear()
+
+    fun size() = hand.size
+
+    fun topCard() = if (hand.isNotEmpty()) hand.last() else ""
+
+    fun cards() = hand.joinToString(" ")
+
+    fun cardsNumbered() = hand.mapIndexed { index, card -> "${index + 1})$card" }.joinToString(" ")
+
+    fun isEmpty() = hand.isEmpty()
+
+    fun isWin(playerCard: String, topCard: String = topCard()) = topCard.isNotEmpty()
+            && (topCard.dropLast(1) == playerCard.dropLast(1) || topCard.last() == playerCard.last())
+
+    fun sumPoints() = hand.map { if (points.contains(it.dropLast(1))) 1 else 0 }.sum()
+
+    fun bestMove(topCard: String) = when {
+        hand.size == 1 -> hand.first()
+        topCard.isEmpty() -> worstCard()
+        else -> bestCard(topCard)
+    }.also { hand.remove(it) }
+
+    private fun worstCard(): String {
+        val suits = hand.filter { card -> hand.count { card.last() == it.last() } > 1 }
+        val ranks: List<String> by lazy { hand.filter { card -> hand.count { card.first() == it.first() } > 1 } }
+
+        return when {
+            suits.isNotEmpty() -> selectCard(suits, false)
+            ranks.isNotEmpty() -> selectCard(ranks, false)
+            else -> selectCard(hand, false)
         }
-        else {
-
-            println("Invalid number of cards.")
-        }
-    } catch (e: NumberFormatException){ println("Invalid number of cards.")}
-    catch (e: Exception) {
-        println("The remaining cards are insufficient to meet the request.")
     }
-}
 
-fun menu() {
-    val deck: Deck = Deck()
-    while (true) {
-        println("Choose an action (reset, shuffle, get, exit):")
-        when(readLine()!!){
-            "reset" -> resetCommand(deck)
-            "shuffle" -> shuffleCommand(deck)
-            "get" -> getCommand(deck)
-            "exit" -> {
-                println("Bye")
-                return
-            }
-            else -> {
-                println("Wrong action.")
-            }
+    private fun bestCard(topCard: String): String {
+        val suits = hand.filter { topCard.last() == it.last() }
+        val ranks: List<String> by lazy { hand.filter { topCard.first() == it.first() } }
+
+        return when {
+            suits.size > 1 -> selectCard(suits, true)
+            ranks.size > 1 -> selectCard(ranks, true)
+            suits.isNotEmpty() || ranks.isNotEmpty() -> selectCard(suits + ranks, true)
+            else -> worstCard()
+        }
+    }
+
+    companion object {
+        const val DEAL_SIZE = 6
+        const val TABLE_SIZE = 4
+        private val points = "A 10 J Q K".split(" ")
+
+        fun create(cards: List<String>) = Hand().also { it.add(cards) }
+
+        private fun selectCard(cards: List<String>, selectBest: Boolean): String {
+            val filterCards = if (selectBest) cards::filter else cards::filterNot
+            val selected = filterCards { points.contains(it.dropLast(1)) }
+
+            return if (selected.isNotEmpty()) selected.random() else cards.random()
         }
     }
 }
 
-fun main() {
-    //val allRanks = "A 2 3 4 5 6 7 8 9 10 J Q K"
-    //val allSuits = "♦ ♥ ♠ ♣"
-    //val allDeckCards = "A♠ 2♠ 3♠ 4♠ 5♠ 6♠ 7♠ 8♠ 9♠ 10♠ J♠ Q♠ K♠ A♥ 2♥ 3♥ 4♥ 5♥ 6♥ 7♥ 8♥ 9♥ 10♥ J♥ Q♥ K♥ A♦ 2♦ 3♦ 4♦ 5♦ 6♦ 7♦ 8♦ 9♦ 10♦ J♦ Q♦ K♦ A♣ 2♣ 3♣ 4♣ 5♣ 6♣ 7♣ 8♣ 9♣ 10♣ J♣ Q♣ K♣"
-    menu()
-}
+class Player(val hand: Hand, private val name: String = "Computer") {
+    private var score = 0
+    private var cards = 0
 
+    fun win(table: Hand) {
+        score += table.sumPoints()
+        cards += table.size()
+        table.reset()
+        lastWinner = this
+        println("$name wins cards")
+    }
+
+    fun printScore(computer: Player) {
+        println("Score: $name $score - " + computer.name + " " + computer.score)
+        println("Cards: $name $cards - " + computer.name + " " + computer.cards)
+    }
+
+    fun finalScore(playerWentFirst: Boolean, computer: Player, table: Hand) {
+        if (!table.isEmpty()) {
+            val cardsWinner = lastWinner ?: if (playerWentFirst) this else computer
+
+            cardsWinner.score += table.sumPoints()
+            cardsWinner.cards += table.size()
+        }
+        val playerGetsPoints = cards > computer.cards || (cards == computer.cards && playerWentFirst)
+
+        if (playerGetsPoints) score += 3 else computer.score += 3
+        printScore(computer)
+    }
+
+    companion object {
+        private var lastWinner: Player? = null
+    }
+}

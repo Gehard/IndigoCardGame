@@ -5,7 +5,7 @@
   <p>You already know how to create singletons associated with classes.<span style="color: #66cc66;"> </span>However, in many cases, you need only one singleton for a class, and using its full name may seem wordy. For example, you might need to store only one common property. In this case, you can use another Kotlin feature, <strong>the companion object</strong>.</p> 
   <h5 id="companion-object">Companion object</h5> 
   <p>An object declaration inside a class can be marked with the <strong>companion</strong> keyword:</p> 
-  <pre><code class="language-kotlin">class Player(val id: Int) {
+  <pre><code class="language-kotlin">class indigo.Player(val id: Int) {
     companion object Properties {
         /* Default player speed in playing field - 7 cells per turn */
         val defaultSpeed = 7
@@ -17,10 +17,10 @@
 }
 
 /* prints 7 */
-println(Player.Properties.defaultSpeed)</code></pre> 
-  <p>A companion object is a singleton attached to an outer class, and hence it cannot be accessed without accessing the outer class. It allows us to understand that the current object is somehow connected with the outer class. For example, we can store the default speed for all players in the <code class="language-kotlin">Player</code> companion object. That also means that every <code class="language-kotlin">Player</code> instance contains a reference to the companion object and will return its instance every time.</p> 
+println(indigo.Player.Properties.defaultSpeed)</code></pre>
+  <p>A companion object is a singleton attached to an outer class, and hence it cannot be accessed without accessing the outer class. It allows us to understand that the current object is somehow connected with the outer class. For example, we can store the default speed for all players in the <code class="language-kotlin">indigo.Player</code> companion object. That also means that every <code class="language-kotlin">indigo.Player</code> instance contains a reference to the companion object and will return its instance every time.</p>
   <p>Until now, we've worked with a named companion object. However, unlike the case of a nested object, the name can be omitted. Let's try it:</p> 
-  <pre><code class="language-kotlin">class Player(val id: Int) {
+  <pre><code class="language-kotlin">class indigo.Player(val id: Int) {
     companion object {
         /* Default player speed in playing field - 7 cells per turn */
         val defaultSpeed = 7
@@ -32,13 +32,13 @@ println(Player.Properties.defaultSpeed)</code></pre>
 }
 
 /* prints 7 */
-println(Player.defaultSpeed)</code></pre> 
+println(indigo.Player.defaultSpeed)</code></pre>
   <p>As you can see, if we omit the name of a companion object, we can still access it through the outer class declaration. If we want to somehow use it, we can define it manually. If a companion object doesn't have a name, we can also use the default name <span style="color: #66cc66;"><code class="language-kotlin">Companion</code></span>:</p> 
   <pre><code class="language-kotlin">/* prints 7 too */
-println(Player.Companion.defaultSpeed)</code></pre> 
+println(indigo.Player.Companion.defaultSpeed)</code></pre>
   <h5 id="companion-object-and-outer-class">Companion object and outer class</h5> 
   <p>A companion is really closely associated with the outer class. You may freely use properties and functions from the companion object in the outer class. For example:</p> 
-  <pre><code class="language-kotlin">class Deck {
+  <pre><code class="language-kotlin">class indigo.Deck {
     companion object {
         val size = 10
         val height = 2
@@ -49,7 +49,7 @@ println(Player.Companion.defaultSpeed)</code></pre>
     val volume = volume(square, height)  //200
 }</code></pre> 
   <p>But what happens if the outer class has a property with the same name as the companion object? Well, in this case, the properties from the class will shadow the properties of the companion.</p> 
-  <pre><code class="language-kotlin">class Deck {
+  <pre><code class="language-kotlin">class indigo.Deck {
     companion object {
         val size = 10
     }
@@ -57,7 +57,7 @@ println(Player.Companion.defaultSpeed)</code></pre>
     val square = size * size // 4
 }</code></pre> 
   <p>In this case, if you want to use a property from the companion, you must use the companion's name, or, if it wasn't named, the default name Companion:</p> 
-  <pre><code class="language-kotlin">class Deck {
+  <pre><code class="language-kotlin">class indigo.Deck {
     companion object {
         val size = 10
     }
@@ -65,7 +65,7 @@ println(Player.Companion.defaultSpeed)</code></pre>
     val square = Companion.size * Companion.size // 100
 }</code></pre> 
   <p>Similar to the case of nested objects, you cannot use the properties and the functions of the outer class in the inner one. For example, you cannot do something like that:</p> 
-  <pre><code class="language-kotlin">class Deck() {    
+  <pre><code class="language-kotlin">class indigo.Deck() {
     val size = 2
     object Properties {
         val defaultSize = size // you cannot get this variable
@@ -86,7 +86,7 @@ println(Player.Companion.defaultSpeed)</code></pre>
 // Compilation error
 // Error: Only one companion object is allowed per class</code></pre> 
   <p>However, we can create one companion object and several nested objects:</p> 
-  <pre><code class="language-kotlin">class Player(val id: Int) {
+  <pre><code class="language-kotlin">class indigo.Player(val id: Int) {
     companion object Properties {
         /* Default player speed in playing field - 7 cells per turn */
         val defaultSpeed = 7
@@ -96,22 +96,22 @@ println(Player.Companion.defaultSpeed)</code></pre>
         }
     }
 
-    /* creates a new instance of Player */
+    /* creates a new instance of indigo.Player */
     object Factory {
-        fun create(playerId: Int): Player {
-            return Player(playerId)
+        fun create(playerId: Int): indigo.Player {
+            return indigo.Player(playerId)
         }
     }
 }
 
 /* prints 7 */
-println(Player.Properties.defaultSpeed)
+println(indigo.Player.Properties.defaultSpeed)
 
 /* also prints 7 */
-println(Player.defaultSpeed)
+println(indigo.Player.defaultSpeed)
 
 /* prints 13 */
-println(Player.Factory.create(13).id)</code></pre> 
+println(indigo.Player.Factory.create(13).id)</code></pre>
   <p>There is one more limitation: we cannot create a companion object inside another singleton (or a companion object) because that violates the global access principle.</p> 
   <pre><code class="language-kotlin">object OuterSingleton {
     companion object InnerSingleton { // Modifier 'companion' is not applicable inside 'object'  

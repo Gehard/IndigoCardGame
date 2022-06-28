@@ -58,7 +58,7 @@ val sizeHigh = Size(height = 10) // width == 1, height == 10</code></pre>
   <h5 id="single-line-classes">Single line classes</h5> 
   <p>If there are no other class members left except the ones in the primary constructor, we can omit empty curly braces. Imagine that the <code class="language-kotlin">area</code> property is missing in our example:</p> 
   <pre><code class="language-kotlin">class Size(val width: Int, val height: Int)</code></pre> 
-  <p>You can see such classes frequently in real life. For example, <strong>data classes</strong>—classes whose main utility is storing data—are defined in this way. You will learn about them later on.</p> 
+  <p>You can see such classes frequently in real life. For example, <strong>data classes</strong>—classes whose indigo.main utility is storing data—are defined in this way. You will learn about them later on.</p>
   <h5 id="init">Init</h5> 
   <p>Primary constructors cannot contain any code: they only set the values of class properties based on the passed arguments. Sometimes, we want to set some of our properties based on other properties' values or other sources of information. In such cases, we would use <strong>initializer blocks</strong>, which are prefixed with the keyword <code class="language-kotlin">init</code>:</p> 
   <pre><code class="language-kotlin">class Size(_width: Int, _height: Int) {

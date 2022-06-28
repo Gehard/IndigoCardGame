@@ -116,7 +116,7 @@ i = 3, j = 1, k = 1</code></pre>
   <p>This code does the same thing but looks more clear!</p> 
   <h5 id="the-return-statement" style="text-align: center;">The Return Statement</h5> 
   <p>Without a label, the <code class="language-kotlin">return</code> statement lets us return the result to the nearest enclosing function. It can be really helpful if we want to jump out of a loop for some reason and skip the remaining loop code:</p> 
-  <pre><code class="language-kotlin">fun main() {
+  <pre><code class="language-kotlin">fun indigo.main() {
     for (i in 1..10) {
         for (j in 1..10) {
             println("i = $i, j = $j")
@@ -132,7 +132,7 @@ i = 1, j = 3</code></pre>
   <p>You can use labels with the <code class="language-kotlin">return</code> statement, too, but it's a more complicated case and we will discuss it later. The idea is the same, though: you will just jump to the label.</p> 
   <h5 id="conclusion" style="text-align: center;">Conclusion</h5> 
   <p>Let's summarize how to use structural jumps. </p> 
-  <p>The <code class="language-kotlin">break</code> statement exits the loop immediately and skips the remaining iterations. The main difference between <code class="language-kotlin">break</code> and <code class="language-kotlin">continue</code> is that <code class="language-kotlin">continue</code> will just skip the rest of the current cycle but will proceed to the following iterations.</p> 
+  <p>The <code class="language-kotlin">break</code> statement exits the loop immediately and skips the remaining iterations. The indigo.main difference between <code class="language-kotlin">break</code> and <code class="language-kotlin">continue</code> is that <code class="language-kotlin">continue</code> will just skip the rest of the current cycle but will proceed to the following iterations.</p>
   <p>Finally, with labels, you can exit the outer/inner loop and continue your processing from the place you need.</p> 
   <p>All the considered statements can also be used with the <code class="language-kotlin">while</code> loop.</p> 
   <p>The <code class="language-kotlin">return</code> statement immediately returns the result of the function, and the code after the <code class="language-kotlin">return</code> keyword will not be executed. </p> 
