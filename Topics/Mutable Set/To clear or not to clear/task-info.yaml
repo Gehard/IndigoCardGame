@@ -1,0 +1,12 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun solution(elements: MutableSet<Int>, element: Int): MutableSet<Int> {
+        // put your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11904#comment
+status: Solved
+record: -1

@@ -72,6 +72,17 @@
       <module name="Indigo_Card_Game.Topics-Mutable_Map-Help_the_robot.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Mutable_Map-Removing.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Mutable_Map-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Additional_elements.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Bad_egg.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Combination.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Division_problem.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Filter.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Little_more_and_little_less.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-MutableSet_properties.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Remove_it_all.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Subtraction.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Mutable_Set-To_clear_or_not_to_clear.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-A_bow_and_a_cat.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Busy_internship.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Nested_and_inner_classes-Christmas_tree.main" target="11" />
