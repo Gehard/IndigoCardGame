@@ -193,6 +193,15 @@
       <module name="Indigo_Card_Game.Topics-Standard_output-We_need_to_learn_Kotlin.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_code_print.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Standard_output-What_does_the_program_print.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Choose_the_correct_option.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Complex_handling.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Finalizing.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Parting_words.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-The_Answer_is.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-The_end.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-The_finally_block.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Theory.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-The_try-catch-finally_statement-Using_as_expressions.main" target="11" />
       <module name="Indigo_Card_Game.Topics-toString__-Inheritance.main" target="11" />
       <module name="Indigo_Card_Game.Topics-toString__-Latte.main" target="11" />
       <module name="Indigo_Card_Game.Topics-toString__-Mochaccino.main" target="11" />
