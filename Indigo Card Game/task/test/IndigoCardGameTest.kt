@@ -422,7 +422,7 @@ fun checkInitial(output: String): ErrorData {
 
 fun checkPlayerOutput(output: String, numOfCards: Int, numOfCardsOnTable : Int, topCard: String): ErrorData {
     var position = checkOutput(output.lowercase(), 0, "$numOfCardsOnTable cards on the table, and the top card is $topCard".lowercase())
-    if ( position  == -1 ) return ErrorData(false, "indigo.Player turn: Wrong message for number of cards and top card.")
+    if ( position  == -1 ) return ErrorData(false, "Player turn: Wrong message for number of cards and top card.")
     position = checkOutput(output.lowercase(), position, "Cards in hand:".lowercase())
     if ( position  == -1 ) return ErrorData(false, "Wrong cards in hand message.")
     var cardsInHand = output.substring(position).lines().map { it.trim() }.first { it != "" }
@@ -430,7 +430,7 @@ fun checkPlayerOutput(output: String, numOfCards: Int, numOfCardsOnTable : Int, 
     val listCardsInHand = cardsInHand.split(" ").map { it.substring(2) }
     var strCardsInHand = ""
     for (card in listCardsInHand) strCardsInHand += "$card "
-    if ( !checkIfUniqueCards(strCardsInHand) ) return ErrorData(false, "indigo.Player's cards in hand contain duplicate cards.")
+    if ( !checkIfUniqueCards(strCardsInHand) ) return ErrorData(false, "Player's cards in hand contain duplicate cards.")
     val lastCard = listCardsInHand.last()
     position = output.indexOf(lastCard, position)
     position = checkOutput(output.lowercase(), position + lastCard.length, "Choose a card to play (1-$numOfCards):".lowercase())

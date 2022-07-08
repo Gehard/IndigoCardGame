@@ -24,6 +24,8 @@ topics:
   0:
   - title: Binary numbers
     theory_id: 5544
+  - title: Hexadecimal numbers
+    theory_id: 8788
   - title: Units of information
     theory_id: 6865
   - title: Introduction to Kotlin
@@ -105,18 +107,8 @@ topics:
   - title: Working with strings
     theory_id: 12561
   1:
-  - title: Computer algorithms
-    theory_id: 16547
-  - title: The big O notation
-    theory_id: 16699
-  - title: Data structures
-    theory_id: 16927
-  - title: The concept of patterns
-    theory_id: 3611
   - title: Computer programming
     theory_id: 8739
-  - title: While loops
-    theory_id: 4659
   - title: Introduction to OOP
     theory_id: 3614
   - title: Declaring classes
@@ -133,6 +125,25 @@ topics:
     theory_id: 10740
   - title: Member functions
     theory_id: 6364
+  - title: Enum
+    theory_id: 6245
+  2:
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: The big O notation
+    theory_id: 16699
+  - title: Best, average and worst cases
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: While loops
+    theory_id: 4659
+  - title: Nullable and non-nullable types
+    theory_id: 7613
+  - title: Type system
+    theory_id: 9689
+  - title: Secondary constructor
+    theory_id: 10746
   - title: Pseudocode
     theory_id: 15090
   - title: Pseudocode basics
@@ -143,31 +154,6 @@ topics:
     theory_id: 11550
   - title: Scopes
     theory_id: 17116
-  - title: Nested and inner classes
-    theory_id: 14723
-  - title: Introduction to software architecture
-    theory_id: 15368
-  - title: Design principles
-    theory_id: 8956
-  - title: Single Responsibility Principle
-    theory_id: 8963
-  - title: Object declarations
-    theory_id: 10698
-  - title: Companion object
-    theory_id: 10707
-  - title: Enum
-    theory_id: 6245
-  - title: Introduction to creational patterns
-    theory_id: 16251
-  - title: Singleton
-    theory_id: 16469
-  2:
-  - title: Nullable and non-nullable types
-    theory_id: 7613
-  - title: Type system
-    theory_id: 9689
-  - title: Secondary constructor
-    theory_id: 10746
   - title: Inheritance
     theory_id: 9844
   - title: Inheritance
@@ -182,7 +168,7 @@ topics:
     theory_id: 8526
   - title: Encapsulation
     theory_id: 8519
-  - title: Properties accessors
+  - title: Property accessors
     theory_id: 10511
   - title: Errors in programs
     theory_id: 11559
