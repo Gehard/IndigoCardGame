@@ -55,7 +55,13 @@
       <module name="Indigo_Card_Game.Topics-Enum-Rainbow_colors.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Enum-valueOf___method.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Declare_an_extension_function.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Definition.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Delegation.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Extension.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Extension_functions-Last_digit.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Overloading.main" target="11" />
+      <module name="Indigo_Card_Game.Topics-Extension_functions-Overriding_member_function.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Extension_functions-Theory.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Inheritance-Cart.main" target="11" />
       <module name="Indigo_Card_Game.Topics-Inheritance-Create_a_child_class.main" target="11" />
